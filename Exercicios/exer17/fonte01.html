@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %            
+            1em = aproximadamente 16px 
+            */
+            font-size: 1em;
+            font-weight: normal;
+            font-style: normal;
+            text-decoration: underline;
+            /*
+            Não confunda!
+            weight (Igual a Peso), com
+            width (Igual a Largura), ou
+            height (Igual a Altura) 
+            */
+            /*  
+            Valores de Peso:
+            lighter, normal, bold e bolder
+            */
+        }
+        h1 {
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /* 
+            shorthand:(Uma mãozinha para simplificar as coisas).
+            Para fontes (shorthand font) a ordem é:
+            font-style -> font-variant -> font-weight -> font-size/line-height -> font-family 
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        } 
+        h2 {
+            font: bolder 2em 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, impedit aliquid suscipit pariatur tempore, a deleniti sequi nulla dolorem illo natus, reiciendis numquam itaque sit quidem deserunt? Id, sed temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa modi, voluptatem eos necessitatibus dolore perferendis, placeat ex fuga eaque tempora ratione molestias consectetur consequatur, fugit earum quas optio. Maxime, deleniti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum atque soluta illum nobis nemo maiores ipsa, animi ipsam esse sit amet quasi labore incidunt facilis dolor est quae non. Necessitatibus.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam molestias, distinctio, a corporis odio deserunt placeat beatae nesciunt maiores laborum, reiciendis consectetur repudiandae nisi repellat necessitatibus enim explicabo pariatur asperiores!</p>
+    <h2>Para poder trabalhar mais</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iure id dolorem ea, aut molestias nam fugit facilis illo asperiores necessitatibus quod perspiciatis maxime dignissimos assumenda. Asperiores nemo officia incidunt?</p>
+</body>
+</html>

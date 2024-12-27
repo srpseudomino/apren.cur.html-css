@@ -1,0 +1,36 @@
+@charset "UTF-8";
+ 
+/* 
+A representação do id do HTML (Oviamente), em CSS
+é # (Só pode um por pagina)
+A representação do class do HTML, em CSS é . (pode varios)
+*/
+body {
+    background-color: #1F2058;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+h1 {
+  color: #050BFA;
+}
+h1#otitulo {
+  text-align: center;
+  color: #0306AD;
+}
+
+h2 {
+  color: #3235BA;
+}
+.basico {
+  color: #32ba4b;
+}
+.intermediario {
+  color: #b5ba32;
+}
+.avancado {
+  color: #ba3232;
+}
+.destaque {
+  background-color: orangered;
+
+}

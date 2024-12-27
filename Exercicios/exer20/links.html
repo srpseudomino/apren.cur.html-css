@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links, como nunca visto ate agora.</title>
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+    <style>
+        /* 
+        Representações nas CSS para seletores personalizados
+        # IGUAL A id
+        . IGUAL A class
+        : IGUAL A pseudo-class
+        :: IGUAL A pseudo-element
+        > IGUAL A clildren(filho)
+        */
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        a {
+            color: green;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: #006400;
+        }
+        a:hover {
+            text-decoration: underline;
+            background-color: palegreen;
+
+        }
+        a:active {
+            color: darkblue;
+        }
+        .recoesp {
+            background-color: hotpink;
+            
+        }
+        .recoesp::before {
+            content: '\0021D2';
+            font-weight: normal;
+            color: darkblue;
+        }
+        .recoesp::after {
+            content: '\0021D0';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links personalizados</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório do Guanabara no GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="recoesp">Canal do CursoemVideo no YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external" class="recoesp">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

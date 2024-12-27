@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: olivedrab;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0px;
+        }
+        header {
+            background-color: orange;
+            padding: 5px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+        }
+        h1, h2, p {
+            margin: 0px;
+        }
+        nav {
+            background-color: yellow;
+            padding: 2px 0px 1px 3px;
+            margin-top: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.517);
+        }
+        nav > a {
+            text-decoration: none;
+            color: orangered;
+            font-weight: bold;
+            margin-right: 7px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: dodgerblue;
+            padding: 10px 10px 10px 10px;
+            margin: 0px 10px 10px 10px;
+            border-radius: 10px 20px 30px 40px;
+            box-shadow: 3px 3px 5px black;
+        }
+        section#assuntos {
+            background-color: greenyellow;
+            padding: 5px;
+            margin-bottom: 10px;
+            
+        }
+        article {
+            background-color: red;
+            color: whitesmoke;
+            padding: 5px;
+            box-shadow:  3px 3px 3px rgba(0, 0, 0, 0.506);
+        }
+        article > aside {
+            background-color: crimson;
+            padding: 3px 0px 3px 5px;
+            margin-top: 5px;
+        }
+        footer {
+            background-color: blue;
+            color: lightgreen;
+            text-align: center;
+            padding: 3px;
+        }
+        div#qnubola {
+            background-color: black;
+            color: snow;
+            text-align: center;
+            line-height: 200px;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+       <h1>Sobre organizar site com Agrupamento</h1>
+       <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+       </nav>
+    </header>
+    <main>
+       <section id="assuntos">
+           <p>Promoções de mercado, segunça da vizinhaça e dicas para fazer deliciosos bolinhos</p>
+       </section>
+       <section id="noticias">
+           <article>
+                <h2>Notícia Urgente</h2>
+                <p>Exemplo de assunto de Artigo: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint sapiente vero accusantium officia perferendis, minus repellendus? Obcaecati atque fugit veritatis enim ea labore doloremque, praesentium ducimus eveniet exercitationem corrupti blanditiis?</p>
+               <aside>
+                   <p>Postado por fulano de Tal</p>
+               </aside>
+           </article>
+           <article>
+
+           </article>
+       </section>
+    </main>
+    <footer>
+       <p>Desenvolvido por Aprendiz em pro do Aprendizado</p>
+    </footer>
+    <div id="qnubola">
+        aredondado
+    </div>
+</body>
+</html>

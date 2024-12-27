@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="imagens/horizonte150.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>A imagem mostrada a seguir é pela cinscuntancias do tamanho do dispositivo ou pelo tamanho da janela do navegador</p>
+
+    <picture>
+        <!--Se a ordem das tags dentro da tag picture for  ao contrario dessa, a função delas não vai ir-->
+        <source media="(max-width: 700px)" srcset="imagens/imgpequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/imgmedio.png" type="image/png">
+        <img src="imagens/imggrande.png" alt="imagens apitativas">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Para aprender sera posto um áudio para reprodução aqui em baixo</p>
+    <audio src="midias/happy-mistake.mp3" controls autoplay loop></audio><br>
+    <!-- MP3, WAV, OGG.Esses são os formatos de audio mais conpativeis com os navegadores-->
+    <audio preload="n" controls autoplay loop>
+        <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midias/guanacast-33.ogg" type="audio/ogg">
+        <source src="midias/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente não é possivel reproduzir o audio no seu navegador.Se quiser baixar <a href="midias/guanacast-33.mp3">Click Aqui</a>.</p>
+    </audio>
+</body>
+</html>

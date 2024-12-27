@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticar aconsenhada:continuação.Familias de Fontes.E uns extras.</title>
+    <style>
+        body {
+            background-color: #0122E0;
+        }
+        main {
+            background-color: white;
+            width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Helvetica, sans-serif;
+            text-shadow: 5px 5px 5px #2E3C8B;
+            color: #dcd511;
+            
+        }
+        p {
+            text-align: center;
+            width: 500px;
+            margin: auto;
+        }
+        p#exp1 {
+           font-family: cursive, serif;
+           color: #0098E0;
+        }
+        input {
+          margin-left: 270px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Desafio que vai ficar para depois-->
+     <main>
+    <h1>Exemplificando um Título</h1>
+    <p id="exp1">Exemplificação de um parágrafo: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi tempore, commodi excepturi laudantium aliquam veritatis quasi pariatur vero dolorum delectus id ratione architecto quos tenetur asperiores tempora? Dicta, ducimus!</p>
+    <p id="parmud">Depois de ter visto isso, dever ter ficado com um pouco desgosto deste site, se quiser click no botão a seguir para uma apresentação totalmente diferente.</p>
+    <input type="button" value="Mudar" onclick="estilizar()">
+    <p id="rests">Para  retornar:</p> 
+     </main>
+   <!-- <div id="reser"></div> (Criado para anteriormente para ver por conteúdo na tela)-->
+    <script>
+        function estilizar() {
+           /* pressisor estuda mais... */ 
+            var esttit = window.document.getElementsByTagName("h1")[0]
+            var estpara = window.document.getElementById("exp1")
+            var paraexp = window.document.querySelector("p#parmud")
+           // var parvot = window.document.createElement('p')
+           var parseg = window.document.getElementById('rests')
+            var linret = window.document.createElement('a')
+            linret.setAttribute('href', "estfonts01.html")
+            linret.setAttribute('target', '_self')
+            linret.setAttribute("rel", "prev")
+            //E pelo visto, Atributos não podem ser tudo no mesmo comando.
+            linret.innerHTML = "Click Aqui"
+           // var espac = window.document.getElementById("reser")
+            esttit.style.fontFamily = 'Georgia, serif'
+            estpara.style.fontFamily = 'Geneva, Verdana, sans-serif'
+            paraexp.innerHTML = "Isso é  um deslumbre das possibilidades que HTML, CSS e JavaScript podem propocionar.E então, gostou de sentir a <strong>Magia</strong>."
+            /*
+            parvot.innerText = "Para retornar:"
+            parvot.appendChild(linret)
+            (Valor e variavel criado por achar que tinha necessidade para apresentação de conteúdo no final da exercução.#fica a dica.)
+            */
+            /*
+            window.document.write(parvot.innerHTML)
+            (No inicio gerado esperando pelo menos o resultado desejado, mas... Problema: quando o comando vai, some com todo o resto.)
+            */
+          /* espac.innerHTML = parvot.innerHTML */
+          parseg.appendChild(linret)
+        }
+    </script>
+</body>
+</html>
