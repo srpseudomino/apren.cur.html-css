@@ -3,21 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vendo background-size</title>
+    <title>Vendo background-size e background-attachment (tamnho e travamento).</title>
     <link rel="shortcut icon" href="imagens/imgfavicon/tamanho_no_fundos.png" type="image/x-icon">
     <style>
         body {
-            height: 100vh;
+            min-height: 100vh;
+            /*
             background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /*
+            Shorthand - background
+            1° color, 2° image, 3° position, 4° repeat, 5° [size] e 
+            6° attachment
+            */
+            
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat  fixed;
+            /*
+            size visto sem shorthand por que não vai, mesmo que na documentação diga que é aplicavel.(Obs: Se a propriedade especificar vier antes da propriedade shorthand, a especificar não vai ir "então tome cuidado com a ordem que você declara!")
+            */
+            
+            background-size: cover;
+            
         }
 
         main {
             background-color: white;
-            width: 600px;
+            max-width: 600px;
             padding: 5px 10px;
             margin: auto;
             border: 2px solid darkcyan;
