@@ -72,12 +72,12 @@ section.fundoimg {
 
 #img1 {
 
-    background-image: url("imagens/background001.jpg");
+    background-image: url("../imagens/background001.jpg");
 
 }
 
 #img2 {
-    background-image: url("imagens/background002.jpg");
+    background-image: url("../imagens/background002.jpg");
 }
 
 footer {
