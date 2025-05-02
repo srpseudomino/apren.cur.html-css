@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -11,7 +13,13 @@
 * {
    margin: 0px;
    font-size: 1em;
-   font-family: var(--fontesgerais);
+   
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontesgerais);
 }
 
 header {
@@ -37,8 +45,13 @@ header a, footer a {
 }
 
 h1 {
-    
-   font-variant: small-caps; 
+   /*
+   Obs.: Parece que usar font-variant faz com que outros fonts que venham depois do font que usam a função var() não vão "Ponto: Não sei se isso incuir shorthands ou mais funções alem da var.".
+   */ 
+   /*
+   text-transform: uppercase;
+   */
+   font-variant: small-caps;
    font-size: 10vw;
    font-family: var(--fontesdetitulo)
    
@@ -48,6 +61,10 @@ section {
     padding: 10vh 0px 10vh 30px;
     line-height: 2em;
     font-size: 3.5vw;
+}
+
+section p {
+    padding-bottom: 2em;
 }
 
 section.geral {
@@ -68,6 +85,7 @@ section.fundoimg {
     display: inline-block;
     padding: 5px;
     background-color: rgba( 0, 0, 0, 0.500);
+    text-shadow: 1px 1px 0px black;
 }
 
 #img1 {
