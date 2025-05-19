@@ -44,6 +44,17 @@ ul {
     max-width: 400px;
     list-style-position: inside;
     columns: 2;
+    
+}
+
+div {
+    width: 13vw;
+    padding: 3px;
+}
+
+img {
+    display: block;
+    width: 100%;
 }
 
 footer {
