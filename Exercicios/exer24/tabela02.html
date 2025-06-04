@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas 2</title>
+    <link rel="shortcut icon" href="imgfavicon/imgtablebig.png" type="image/x-icon">
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            position: relative;
+            /*
+            Obs: A tecnologia de colagem de cabçalho pode ainda não funcionar muito bem em todos os navegadores, então veja o uso com moderação.
+            */
+        }
+
+        caption {
+          font-size: 1.5em;
+          font-weight: bold;
+          padding: 10px;
+          background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+          position: sticky;
+          top: -1px;
+          background-color: gray;
+          
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+          background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+          background-color: white;
+        }
+
+       td, th {
+        padding: 5px;
+        border: 1px solid black;
+        
+       }
+
+       .numero {
+        text-align: right;
+       }
+       .outrosdados {
+        text-align: center;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Vendo uso de tabelas grandes</h1>
+    <!--
+        CARACTERISTICAS ANATOMICAS PARA TABELAS GRANDES
+        _1TABLE
+            _2CAPTION
+            _2THEAD
+                3TR, 4TH, 4TD
+            _THEAD
+            _2TBODY
+                3TR, 4TH, 4TD
+            _TBODY    
+            _2TFOOT
+                3TR, 4TH, 4TD
+            _TFOOT
+        _TABLE    
+
+    -->
+    <table>
+        <caption>População por Estado</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col">Total da população (em %)</th>
+                <th scope="col">Comparativo de países (habitantes)</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+                <td class="outrosdados">21,9%</td>
+                <td class="outrosdados">Espanha (46.439.864)</td>
+             </tr>
+             <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.168.791</td>
+                <td class="outrosdados">10,1%</td>
+                <td class="outrosdados">Siri Lanka (20.675.000)</td>
+             </tr>
+             <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+                <td class="outrosdados">8,2%</td>
+                <td class="outrosdados">Paises Baixos (16.922.900)</td>
+             </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="numero">14.873.064</td>
+                <td class="outrosdados">7,1%</td>
+                <td class="outrosdados">Chade (14.037.000)</td>
+             </tr>
+              <tr>
+                <td>Paraná</td>
+                <td class="numero">11.433.957</td>
+                <td class="outrosdados">5,4%</td>
+                <td class="outrosdados">Bolivia (11.410.651)</td>
+             </tr>
+              <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11.377.239</td>
+                <td class="outrosdados">5,4%</td>
+                <td class="outrosdados">Bélgica (11.250.659)</td>
+             </tr>
+             <tr>
+               <td>Pernambuco</td>
+               <td class="numero">9.557.071</td>
+               <td class="outrosdados">4,5%</td>
+               <td class="outrosdados">Bielorrússia (9.485.300)</td>
+             </tr>
+             <tr>
+               <td>Ceará</td>
+               <td class="numero">9.132.078</td>
+               <td class="outrosdados">4,3%</td>
+               <td class="outrosdados">Emirados Árabes Unidos (9.157.000)</td>
+             </tr>
+             <tr>
+               <td>Pará</td>
+               <td class="numero">8.602.865</td>
+               <td class="outrosdados">4,1%</td>
+               <td class="outrosdados">Áustria (8.602.112)</td>
+             </tr>
+             <tr>
+               <td>Santa Catarina</td>
+               <td class="numero">7.164.788</td>
+               <td class="outrosdados">3,4%</td>
+               <td class="outrosdados">Sérvia (7.114.393)</td>
+             </tr>
+             <tr>
+               <td>Maranhão</td>
+               <td class="numero">7.075.181</td>
+               <td class="outrosdados">3,4%</td>
+               <td class="outrosdados">Paraguai (7.003.406)</td>
+             </tr>
+             <tr>
+               <td>Goiás</td>
+              <td class="numero">7.018.354</td>
+               <td class="outrosdados">3,3%</td>
+               <td class="outrosdados">Paraguai (7.003.406)</td>
+             </tr>
+             <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.144.597</td>
+               <td class="outrosdados">2,0%</td>
+               <td class="outrosdados">Líbano (4.168.000)</td>
+             </tr>
+             <tr>
+               <td>Espírito Santo</td>
+               <td class="numero">4.018.650</td>
+               <td class="outrosdados">1,9%</td>
+               <td class="outrosdados">Líbano (4.168.000)</td>
+             </tr>
+             <tr>
+               <td>Paraíba</td>
+               <td class="numero">4.018.127</td>
+               <td class="outrosdados">1,9%</td>
+               <td class="outrosdados">Líbano (4.168.000)</td>
+             </tr>
+             <tr>
+               <td>Rio Grande do Norte</td>
+               <td class="numero">3.506.853</td>
+               <td class="outrosdados">1,7%</td>
+               <td class="outrosdados">Uruguai (3.415.866)</td>
+             </tr>
+             <tr>
+               <td>Mato Grosso</td>
+               <td class="numero">3.484.466</td>
+               <td class="outrosdados">1,7%</td>
+               <td class="outrosdados">Uruguai (3.415.866)</td>
+             </tr>
+             <tr>
+               <td>Alagoas</td>
+               <td class="numero">3.337.357</td>
+               <td class="outrosdados">1,6%</td>
+               <td class="outrosdados">Uruguai (3.415.866)</td>
+             </tr>
+             <tr>
+               <td>Piauí</td>
+               <td class="numero">3.273.227</td>
+               <td class="outrosdados">1,6%</td>
+               <td class="outrosdados">Kuwait (3.268.431)</td>
+             </tr>
+             <tr>
+               <td>Distrito Federal</td>
+               <td class="numero">3.015.268</td>
+               <td class="outrosdados">1,4%</td>
+               <td class="outrosdados">Lituânia (2.900.787)</td>
+             </tr>
+             <tr>
+               <td>Mato Grosso do Sul</td>
+               <td class="numero">2.778.986</td>
+               <td class="outrosdados">1,3%</td>
+               <td class="outrosdados">Jamaica (2.717.991)</td>
+             </tr>
+             <tr>
+               <td>Sergipe</td>
+               <td class="numero">2.298.696</td>
+               <td class="outrosdados">1,1%</td>
+               <td class="outrosdados">Namíbia (2.280.700)</td>
+             </tr>
+             <tr>
+               <td>Rondônia</td>
+               <td class="numero">1.777.225</td>
+               <td class="outrosdados">0,8%</td>
+               <td class="outrosdados">Gabão (1.725.000)</td>
+             </tr>
+             <tr>
+               <td>Tocantins</td>
+               <td class="numero">1.572.866</td>
+               <td class="outrosdados">0,7%</td>
+               <td class="outrosdados">Bahrein (1.359.800)</td>
+             </tr>
+             <tr>
+               <td>Acre</td>
+               <td class="numero">881.935</td>
+               <td class="outrosdados">0,4%</td>
+               <td class="outrosdados">Fiji (859.178)</td>
+             </tr>
+             <tr>
+               <td>Amapá</td>
+               <td class="numero">845.731</td>
+               <td class="outrosdados">0,4%</td>
+               <td class="outrosdados">Fiji (859.178)</td>
+             </tr>
+             <tr>
+               <td>Roraima</td>
+               <td class="numero">605.761</td>
+               <td class="outrosdados">0,3%</td>
+               <td class="outrosdados">Luxemburgo (562.958)</td>
+             </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Valor total</th>
+                <td class="numero"><strong>210.147.125</strong></td>
+                <td class="outrosdados">&cong; 100%</td>
+                <td class="outrosdados">195.490.906</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint natus assumenda velit odio voluptatum architecto minus, earum quisquam, error explicabo consectetur molestiae aliquid saepe praesentium cumque! Eveniet officia tempore in! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quos placeat rerum saepe dignissimos illo, necessitatibus sequi labore tempore sapiente qui quia quaerat. Recusandae iste, eveniet iure nesciunt consectetur neque.</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, nulla minus commodi numquam ex earum, et praesentium consequatur corporis ullam assumenda mollitia a, tenetur unde voluptas sequi eligendi quibusdam sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati repudiandae, provident minima maxime numquam molestias, quasi eius distinctio recusandae adipisci fuga, ducimus corrupti sapiente asperiores. Corrupti iste est ullam hic.</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda quas cum ea placeat beatae officia dolores porro, totam, eveniet culpa delectus officiis molestiae, modi doloremque a? Vel, reprehenderit. Quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ut provident eum fugiat similique dicta assumenda rem, illo ad! Ex molestiae possimus consectetur at iusto quia, quae facere voluptatum totam!</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit corrupti dolores quidem necessitatibus autem aperiam dicta alias iure reprehenderit velit illo, ut accusantium aliquid voluptatum sint, dignissimos ab amet voluptatibus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur eum ducimus deleniti, tempore totam architecto veniam, doloremque odit placeat ipsam, aspernatur velit optio corporis iste culpa asperiores modi sit quaerat!</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque commodi, repudiandae saepe temporibus quibusdam dignissimos voluptas veniam, excepturi enim reiciendis beatae ullam. Vero praesentium suscipit blanditiis esse, eos cupiditate impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio error at iste tenetur quo eius sed sapiente magnam, temporibus sit modi reiciendis libero cupiditate corrupti? Odio ipsum quam explicabo vel.</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis autem atque quos officiis natus. Deserunt esse voluptate, expedita error consequatur at, magnam odio velit ullam quaerat voluptatem vitae quia soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quisquam dolorum minima harum officiis qui tempora hic accusamus optio ab porro quia maiores aliquam facilis exercitationem facere provident, pariatur ex!</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus similique quo iste velit. Fugit esse sed illum voluptatem dignissimos, ipsum facere quibusdam sequi illo cumque distinctio blanditiis impedit. Perferendis!</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure quibusdam deleniti culpa autem laboriosam tenetur dolorum quia illum, aperiam ducimus? Optio aperiam dolor animi tempore ab eveniet suscipit sit ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea fuga iste distinctio, laudantium sapiente assumenda quibusdam facere aperiam voluptatum tenetur cumque, quisquam consectetur nesciunt reiciendis voluptatibus voluptatem impedit. Cum, cumque.</p>
+    <p>Conteúdo para ver tratamento de tabelas. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi qui veniam nemo iusto possimus! Velit illum quo totam quam adipisci, maiores praesentium porro aperiam optio perferendis beatae aliquid perspiciatis dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia dicta debitis illo laborum ipsa corrupti placeat et illum saepe, magnam, asperiores vero doloribus optio facilis. Atque in fuga vel minus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi dignissimos sunt sed velit commodi nihil esse quibusdam voluptatibus. Illo, tenetur voluptatum vel mollitia saepe in labore accusamus nulla ipsa.</p>
+</body>
+</html>
