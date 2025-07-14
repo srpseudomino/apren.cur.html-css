@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando iframe: Navegação</title>
+    <link rel="shortcut icon" href="imgfavicon/navegacao_com_iframe.png" type="image/x-icon">
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+
+        h1, p {
+
+            text-align: center;
+            padding: 5px;
+
+        }
+
+        iframe#navegation {
+
+            display: block;
+            width: 95vw;
+            height: 350px;
+            border: 2px solid black;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça escolhas aqui abaixo.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facilis deserunt minima, maiores voluptas numquam! Molestiae cumque non iure dolor facere nostrum, quae quam! Corrupti dolor sit quos commodi reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut laboriosam officiis ipsa quam culpa odio esse labore consectetur eaque perspiciatis aut totam tempora odit, enim tempore dolor, facere fugiat. Fugit.</p>
+
+    <ul>
+        <li><a href="pagsextras/pagina01.html" target="visualização" rel="next">Primeira Página</a></li>
+        <li><a href="pagsextras/pagina02.html" target="visualização" rel="next">Segunda Página</a></li>
+        <li><a href="pagsextras/pagina03.html" target="visualização" rel="next">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus quam magni voluptatum, dolorum accusamus eius minima repudiandae rerum exercitationem mollitia cupiditate laboriosam non eligendi reiciendis explicabo, iste blanditiis nihil. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ad officiis placeat fugiat deserunt commodi sapiente rem optio in inventore ut modi, alias perspiciatis ratione, esse illo unde fuga blanditiis?</p>
+
+    <iframe src="" srcdoc="<h1>Nenhuma Página carregada!</h1><p>Click em um dos links da lista e veja as possibilidades.</p><img src='imagens/conteudo_iframe.png'>" id="navegation" name="visualização">
+        <p>Navegador inconpativel com iframe!</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum dolores qui molestias eos quae quas asperiores vel quam tenetur, reiciendis, itaque recusandae, esse amet consectetur fuga autem enim numquam a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt ad doloribus aliquid quam rerum doloremque deleniti rem ut. Minus nihil harum enim libero. Id obcaecati ea eos eius quos architecto?</p>
+</body>
+</html>
