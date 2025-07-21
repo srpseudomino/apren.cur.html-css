@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe, segurança e scripts</title>
+    <link rel="shortcut icon" href="imgfavicon/seguranca_e_scripts_em_iframe.png" type="image/x-icon">
+    <style>
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+
+        }
+
+        h1, p {
+
+            padding: 0px 5px;
+
+        }
+
+        iframe {
+
+            display: block;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Ainda vendo segurança em iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos doloribus hic placeat, dolores harum sed atque dolore odio maiores rerum velit architecto reiciendis repellendus maxime accusantium. Odio, veritatis laborum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores alias, earum facere, nobis, neque accusantium blanditiis excepturi laboriosam maxime soluta distinctio incidunt commodi veniam maiores error esse ea culpa in?</p>
+    <iframe src="pagsextras/pagina05.html" sandbox="allow-scripts" referrerpolicy="no-referrer">
+        <p>[ERRO]! Navegador incopativel. Tente ver em outro ou <a href="pagsextras/pagina05.html" target="_blank" rel="next">Click Aqui</a> para ver a pagina.</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum, necessitatibus quisquam, beatae recusandae fuga fugiat eos consectetur dicta harum obcaecati ratione quam maiores, aliquid iusto pariatur excepturi minima quaerat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates mollitia facere libero commodi. Sint dicta maiores accusamus sit optio, non facere porro quisquam totam fuga sapiente deleniti ab cupiditate voluptates.</p>
+</body>
+</html>

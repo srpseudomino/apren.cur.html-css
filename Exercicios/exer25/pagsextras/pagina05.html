@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendo um pouquinho de JavaScript</title>
+    <link rel="shortcut icon" href="../imgfavicon/seguranca_e_scripts_em_iframe.png" type="image/x-icon">
+    <style>
+        body {
+
+            background-color: lightskyblue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>A seguir: Click e Eventos</h1>
+    <p><a href="#" onclick="clicar()">Click Aqui</a> e veja uma maravilha da progrmação acontecer.</p>
+    <div id="resposta">
+
+    </div>
+    <script>
+        function clicar() {
+            var res = window.document.getElementById("resposta")
+            res.innerHTML += "<p>CLICK!</p>"
+        }
+    </script>
+</body>
+</html>
