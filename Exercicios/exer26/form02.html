@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Testando Formulários</h1>
+    <form action="outros/cadastrando.php" method="post" autocomplete="on">
+        <p>
+            <label for="usern">Usuário: </label>
+            <input type="text" name="user" id="usern" required minlength="5" maxlength="10" size="12" placeholder="Nome de Usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="usenha">Senha: </label>
+            <input type="password" name="senha" id="usenha" required minlength="8" maxlength="30" size="13" placeholder="Minimo de 8 Digitos" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
