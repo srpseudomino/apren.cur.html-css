@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+    <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Continuando vendo formulários</h1>
+    <form action="outros/cadastrando.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="isexom" checked value="M"> <label for="isexom">Masculino</label>
+                <input type="radio" name="sexo" id="isexof" value="F"> <label for="isexof">Feminino</label>
+
+            </p>
+        </fieldset>
+         <fieldset>
+            <legend>Esportes favoritos</legend>
+            <p>
+                <input type="checkbox" name="sportbasq" id="isportbasq"> <label for="isportbasq">Basquete</label><br>
+                <input type="checkbox" name="sportfut" id="isportfut" checked> <label for="isportfut">Futebol</label><br>
+                <input type="checkbox" name="sportnat" id="isportnat"> <label for="isportnat">Natação</label><br>
+                <input type="checkbox" name="sportten" id="isportten"> <label for="isportten">Tênis</label>
+
+            </p>
+         </fieldset>
+       
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
