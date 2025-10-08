@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Vendo muitos Formulários</h1>
-    <form action="outros/cadastrando.php" method="get" autocomplete="on">
+    <form action="outros/cadastrando.php" method="post" autocomplete="on">
         <p>
             <label for="icor">Cor: </label>
             <input type="color" name="cor" id="icor" value="#0000ff">
@@ -17,6 +17,12 @@
         <p>
             <label for="inivel">Nível de Satisfação: </label>
             <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+        </p>
+
+        <p>
+            <!--Usando esse tipo de controle não se dever utilizar o metodo get devido a limitação de envio de dados-->
+            <label for="ifoto">Foto de Perfil: </label>
+            <input type="file" name="foto" id="ifoto">
         </p>
 
         <p>
