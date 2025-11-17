@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 4</title>
     <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <link rel="stylesheet" href="estilos/estgerais02.css">
 </head>
 <body>
     <h1>Ainda vendo formulários</h1>
     <form action="outros/cadastrando.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
-            <p>
-                <label for="isuer">Nome </label>
+            <div>
+                <label for="isuer">Nome: </label>
                 <input type="text" name="nome" id="isuer" minlength="3" maxlength="30" placeholder="Nome Completo" required autocomplete="name">
-            </p>
-            <p>
-                <label for="emaili">E-mail </label>
+            </div>
+            <div>
+                <label for="emaili">E-mail: </label>
                 <input type="email" name="email" id="emaili" placeholder="***********@gmail.com" required>
-            </p>
-            <p>
-                <label for="itel">Telefone </label>
+            </div>
+            <div>
+                <label for="itel">Telefone: </label>
                 <input type="tel" name="tel" id="itel" placeholder="(xx)xxxxx-xxxxx" pattern="^\(\d{2}\)[0-9]{4,5}-\d{4,5}$" required>
-            </p>
+            </div>
         </fieldset>
-        <p>
+        <div>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
-        </p>
+        </div>
     </form>
 </body>
 </html>

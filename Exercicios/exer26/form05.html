@@ -5,33 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 5</title>
     <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <style>
+
+        h1, legend, div#botoes {
+
+            text-align: center;
+
+        }
+
+        fieldset > div {
+
+            width: 200px;
+            margin: auto;
+
+        }
+
+    </style>
 </head>
 <body>
     <h1>Continuando vendo formulários</h1>
     <form action="outros/cadastrando.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
-            <p>
+            <div>
                 <input type="radio" name="sexo" id="isexom" checked value="M"> <label for="isexom">Masculino</label>
                 <input type="radio" name="sexo" id="isexof" value="F"> <label for="isexof">Feminino</label>
 
-            </p>
+            </div>
         </fieldset>
          <fieldset>
             <legend>Esportes favoritos</legend>
-            <p>
-                <input type="checkbox" name="sportbasq" id="isportbasq"> <label for="isportbasq">Basquete</label><br>
+            <div>
+                <input type="checkbox" name="sportbasq" id="isportbasq" size="10"> <label for="isportbasq">Basquete</label><br>
                 <input type="checkbox" name="sportfut" id="isportfut" checked> <label for="isportfut">Futebol</label><br>
                 <input type="checkbox" name="sportnat" id="isportnat"> <label for="isportnat">Natação</label><br>
                 <input type="checkbox" name="sportten" id="isportten"> <label for="isportten">Tênis</label>
 
-            </p>
+            </div>
          </fieldset>
        
-        <p>
+        <div id="botoes">
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
-        </p>
+        </div>
     </form>
 </body>
 </html>

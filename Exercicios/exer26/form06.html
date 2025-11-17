@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 6</title>
     <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <link rel="stylesheet" href="estilos/estgerais02.css">
 </head>
 <body>
     <h1>Vendo muitos Formulários</h1>
     <form action="outros/cadastrando.php" method="post" autocomplete="on">
-        <p>
+        <div>
             <label for="icor">Cor: </label>
             <input type="color" name="cor" id="icor" value="#0000ff">
-        </p>
+        </div>
 
-        <p>
+        <div>
             <label for="inivel">Nível de Satisfação: </label>
             <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
-        </p>
+        </div>
 
-        <p>
+        <div>
             <!--Usando esse tipo de controle não se dever utilizar o metodo get devido a limitação de envio de dados-->
             <label for="ifoto">Foto de Perfil: </label>
             <input type="file" name="foto" id="ifoto">
-        </p>
+        </div>
 
-        <p>
+        <div>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
-        </p>
+        </div>
     </form>
 </body>
 </html>

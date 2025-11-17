@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 10</title>
+    <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <link rel="stylesheet" href="estilos/estgerais02.css">
+</head>
+<body>
+    <h1>Mais formulários(com output)</h1>
+    <form action="outros/cadastrando.php" method="get" autocomplete="on">
+        <p>
+            <label for="anonasc">Informe seu ano de Nascimento: </label>
+            <input type="number" name="ano" id="anonasc" min="1900" max="2025"  oninput="calcidade()">
+            <!--<input type="number" name="ano" id="anonasc" min="1900" max="2025"  oninput="iidade.innerHTML = new Date().getFullYear() - Number(anonasc.value)">-->
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é </label>
+            <output name="idade" id="iidade">0</output>
+            anos.
+        </p>
+
+        <p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+    <script>
+        /*
+        Caso não se lembre ou ficou confuso então volte a ver JavaScript!
+        */
+        function calcidade() {
+            let anoatual = new Date().getFullYear()
+            iidade.innerHTML = anoatual - Number(anonasc.value)
+        } 
+    </script>
+</body>
+</html>

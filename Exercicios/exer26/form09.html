@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Formulário 9</title>
     <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/estgerais01.css">
     <link rel="stylesheet" href="estilos/estgerais02.css">
     <style>
 
-        label {
+        output {
 
-           margin: auto;
+            display: block;
 
         }
 
     </style>
 </head>
 <body>
-    <h1>Vendo formulários em HTML(Primeira Pratica)</h1>
-    <form action="outros/cadastrando.php" method="post" autocomplete="off">
+    <h1>outro exemplo de Formulário(com output)</h1>
+    <form action="outros/cadastrando.php" method="get" autocomplete="on">
+       <div>
+        <label for="inum">Veja um Número: </label>
+        <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML = inum.value">
+        <output name="valor" id="ival">5</output>
+       </div>
+
         <div>
-            <label for="pn">Nome: </label> 
-            <input type="text" name="pnome" id="pn">
-        </div>
-        <div>
-            <label for="sn">Sobrenome: </label> 
-            <input type="text" name="snome" id="sn">
-        </div>
-        <div>
+            <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
         </div>
     </form>

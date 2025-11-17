@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 7</title>
     <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <link rel="stylesheet" href="estilos/estgerais02.css">
 </head>
 <body>
     <h1>Formulários (Só que sem foco em input)</h1>
     <form action="outros/cadastrando.php" method="post" autocomplete="on">
-        <p>
+        <div>
             <label for="iest">Estado: </label>
             <select name="est" id="iest">
                 <option value="nada" selected>---Nenhuma---</option>
@@ -26,9 +28,9 @@
                     <option value="RN">Rio Grande do Norte</option>
                 </optgroup>
             </select>
-        </p>
+        </div>
 
-        <p>
+        <div>
             <label for="iprofessi">Profisão: </label>
             <input type="text" name="professi" id="iprofessi" list="listprofessi">
             <datalist id="listprofessi">
@@ -37,17 +39,17 @@
                 <option>Desenvolvedor</option>
                 <option>Professor</option>
             </datalist>
-        </p>
+        </div>
 
-        <p>
+        <div>
             <label for="imsg">Mensagem: </label>
             <textarea name="msg" id="imsg" cols="30" rows="5" maxlength="30" placeholder="Mande uma mensagem dizendo o que achou!"></textarea>
-        </p>
+        </div>
 
-        <p>
+        <div>
             <input type="reset" value="Limpar">
             <input type="submit" value="Enviar">
-        </p>
+        </div>
     </form>
 </body>
 </html>

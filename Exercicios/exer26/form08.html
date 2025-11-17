@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formilário 8</title>
+    <link rel="shortcut icon" href="imgfavicon/favicon_formularios.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estgerais01.css">
+    <link rel="stylesheet" href="estilos/estgerais02.css">
+</head>
+<body>
+    <h1>Exemplo de Formulário(com output)</h1>
+    <form action="outros/cadastrando.php" method="get" autocomplete="on">
+        <p>
+            Informe dois números para somar.
+        </p>
+        <div>
+           <label for="n1">Primeiro Número: </label>
+           <input type="number" name="num1" id="n1" min="0" max="50" required oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="n2">Segundo Número: </label>
+            <input type="number" name="num2" id="n2" min="0" max="50" required oninput="isoma.innerHTML = Number(n1.value) + Number(n2.value)">
+        </div>
+
+        <div>
+            <label for="isoma">Soma dos valores: </label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

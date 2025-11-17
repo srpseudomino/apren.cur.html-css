@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+        /*
+
+          declarações gerais
+        
+        */
+        /*
+           Obs.: o all aqui não é necessário!
+        */
+
+        @media all {
+
+            * {
+
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0px;
+
+            }
+
+            html, body {
+
+                background-color: blue;
+                width: 100vw;
+                height: 100vh;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+            }
+
+            h1 {
+
+                color: white;
+                text-align: center;
+                text-shadow: 3px 3px 0px darkblue;
+                padding: 5px 10px;
+
+            }
+        }
+
+        /* 
+
+        declarações do modo em pé 
+
+        */
+        
+        @media screen and (orientation: portrait) {
+
+            body {
+
+                background-image: url("../imagens/cev-portrait.jpg");
+                background-position: center bottom;
+
+            }
+            
+        }
+
+        /*
+
+        declarações do modo paisagem 
+
+        */
+
+        @media  screen and (orientation: landscape) {
+            
+            body {
+
+                background-image: url("../imagens/cev-landscape.jpg");
+                background-position: left bottom;
+                
+
+            }
+
+        }
