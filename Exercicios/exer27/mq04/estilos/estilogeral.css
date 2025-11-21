@@ -14,7 +14,7 @@
 
 }
 
-html, body {
+html {
 
   width: 100vw;
   height: 100vh;
@@ -27,7 +27,7 @@ body {
   background: black url("../imagens/back-phone.jpg") center center no-repeat;
   background-size: cover;
   color: white;
-  padding-top: 5px;
+  
 
 }
 
@@ -36,7 +36,7 @@ main {
   background-color: rgba(255, 255, 255, 0.8);
   width: 90vw;
   padding-top: 5px;
-  margin: auto;
+  margin: 5px auto;
   border-radius: 10px;
 
 }
@@ -44,5 +44,43 @@ main {
 main > h1 {
 
   text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+img {
+
+  display: block;
+  margin: auto;
+
+}
+
+img#phone {
+
+  display: block;
+
+}
+
+img#tablet {
+
+  display: none;
+
+}
+
+img#print {
+
+  display: none;
+
+}
+
+img#pc {
+
+  display: none;
+
+}
+
+img#tvemais {
+
+  display: none;
 
 }
