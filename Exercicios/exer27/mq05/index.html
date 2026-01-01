@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query para Menus mais reponsivos</title>
+    <link rel="shortcut icon" href="imgfavicon/media_queries.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_open" />
     <link rel="stylesheet" href="estilos/estilogeral.css" media="all">
     <link rel="stylesheet" href="estilos/estcecular.css" media="screen and (min-width: 600px) and (max-width: 768px)">
     <link rel="stylesheet" href="estilos/esttablet.css" media="screen and (min-width: 768px) and (max-width: 992px)">
     <link rel="stylesheet" href="estilos/estpc.css" media="screen and (min-width: 992px) and (max-width: 1200px)">
     <link rel="stylesheet" href="estilos/esttvemais.css" media="screen and (min-width: 1200px)">
 </head>
-<body>
+<body id="tela" onresize="ajuste()">
     <header>
         <h1>Site que é do Desenvolvedor</h1>
-        <menu>
+        <span class="material-symbols-outlined" id="menutresbarras" onclick="interatividademenu()">
+            &#xe5d2;
+        </span>
+        <menu id="escolha">
             <ul>
                 <li>
                     <a href="#">Opção 1</a>
@@ -41,5 +47,38 @@
             <p>Conteúdo para desmontração(Obs. Veja esse site na tela de varios dispositivos!). Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio consequatur tempora sint, minus iure fugiat quam ducimus, odio dicta eos unde? Cumque, tempora molestiae soluta at aliquam ab ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse odit aliquam ducimus magni amet doloremque odio. Ipsa ex dolorem praesentium fuga quod aut nam. Nihil asperiores ex distinctio fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ipsum officiis, voluptatibus ratione, eligendi soluta sapiente recusandae impedit et perferendis saepe sint veritatis a neque incidunt. Expedita ex sit necessitatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dolor, amet corrupti dolorem voluptas nostrum maiores, impedit aliquam, quis vitae sunt assumenda facilis molestias cumque pariatur voluptate voluptates? Reiciendis, eum!</p>
         </article>
     </main>
+    <script>
+        
+        function ajuste() {
+
+            if(window.innerWidth >= 768) {
+
+                escolha.style.display = 'block'
+
+            } else {
+
+                escolha.style.display = 'none'
+
+            }
+
+        }
+
+        function interatividademenu() {
+
+            if(escolha.style.display == 'none') {
+
+                menutresbarras.innerText = "menu_open"
+                escolha.style.display = 'block'
+
+            } else {
+
+                menutresbarras.innerText = '\u{e5d2}'
+                escolha.style.display = 'none'
+
+            }
+
+        }
+
+    </script>
 </body>
 </html>
