@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+section {
+
+    width: 80vw;
+    height: 280px;
+
+}
+
+#imagem {
+
+    
+    width: 30%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+#formulario {
+
+    width: 67%;
+    height: 100%;
+    position: absolute;
+    bottom: -1%;
+    left: 30%;
+
+}
+
+#formulario > h1 {
+
+    padding-top: 15px;
+
+}
+
+#formulario p {
+
+    font-size: 0.85em;
+
+}
