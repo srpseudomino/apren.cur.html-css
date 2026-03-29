@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+main {
+
+    width: 800px;
+
+}
+
+h1 {
+
+    font-size: 2.7em;
+
+}
+
+h2 {
+
+    font-size: 2.05em;
+
+}
+
+p, li, footer {
+
+    font-size: 1.05em;
+
+}
+
+ul {
+
+    width: 600px;
+    columns: 3;
+
+}
