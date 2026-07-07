@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagens/imgfavicon/caixasflexiveis2.png" type="image/x-icon">
+        <title>Flexible Box 3</title>
+        <style>
+            div.container {
+                display: flex;
+                flex-flow: row wrap-reverse;
+                background-color: lightseagreen;
+                border: 3px dashed black;
+            }
+            div.itens {
+                flex: auto;
+                background-color: lightpink;
+                text-align: center;
+                border: 1px solid white;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="itens">Exemplo de Conteúdo A</div>
+            <div class="itens">Exemplo de Conteúdo B</div>
+            <div class="itens">Exemplo de Conteúdo C</div>
+            <div class="itens">Exemplo de Conteúdo D</div>
+            <div class="itens">Exemplo de Conteúdo E</div>
+            <div class="itens">Exemplo de Conteúdo F</div>
+            <div class="itens">Exemplo de Conteúdo G</div>
+        </div>
+    </body>
+</html>
