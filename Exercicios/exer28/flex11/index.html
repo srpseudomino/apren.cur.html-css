@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagens/imgfavicon/caixasflexiveis2.png" type="image/x-icon">
+        <title>Flexible Box 11</title>
+        <style>
+            div.container {
+                display: flex;
+                flex-flow: row nowrap;
+                background-color: lightseagreen;
+                border: 3px dashed black;
+            }
+            div.itens {
+                background-color: lightpink;
+                text-align: center;
+                border: 1px solid white;
+                /*
+                flex-basis: 350px;
+                */
+                flex-basis: 200px;
+            }
+            div#caixa1 {
+                /*
+                flex-grow: 4;
+                flex-shrink: 1;
+                */
+                flex-grow: 1;
+                flex-shrink: 0;
+            }
+            div#caixa2 {
+                /*
+                flex-grow: 1;
+                flex-shrink: 2;
+                */
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+            div#caixa3 {
+                /*
+                flex-grow: 0;
+                flex-shrink: 4;
+                */
+                flex-grow: 1;
+                flex-shrink: 8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="itens" id="caixa1">A</div>
+            <div class="itens" id="caixa2">B</div>
+            <div class="itens" id="caixa3">C</div>
+        </div>
+    </body>
+</html>

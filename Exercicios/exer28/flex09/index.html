@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagens/imgfavicon/caixasflexiveis2.png" type="image/x-icon">
+        <title>Flexible Box 9</title>
+        <style>
+            div.container {
+                display: flex;
+                flex-flow: row nowrap;
+                background-color: lightseagreen;
+                border: 3px dashed black;
+            }
+            div.itens {
+                background-color: lightpink;
+                text-align: center;
+                border: 1px solid white;
+                flex-basis: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="itens">A</div>
+            <div class="itens">Outro conteúdo B</div>
+            <div class="itens">C</div>
+            <div class="itens">Conteúdo um pouco maior D</div>
+            <div class="itens">E</div>
+            <div class="itens">Conteúdo maior ainda, que vai ocupar mais espaço. F</div>
+            <div class="itens">G</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../imagens/imgfavicon/caixasflexiveis2.png" type="image/x-icon">
+        <title>Flexible Box 8</title>
+        <style>
+            div.container {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: flex-start;
+                background-color: lightseagreen;
+                height: 400px;
+                border: 3px dashed black;
+            }
+            div.itens {
+                background-color: lightpink;
+                text-align: center;
+                padding: 20px;
+                border: 1px solid white;
+                order: 0;
+            }
+            div#item1 {
+                align-self: inherit;
+            }
+            div#item2 {
+                align-self: auto;
+            }
+            div#item3 {
+                align-self: flex-end;
+            }
+            div#item4 {
+                align-self: unset;
+            }
+            div#item5 {
+                align-self: center;
+            }
+            div#item6 {
+                align-self: flex-start;
+            }
+            div#item7 {
+                align-self: stretch;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="itens" id="item1">A</div>
+            <div class="itens" id="item2">B</div>
+            <div class="itens" id="item3">C</div>
+            <div class="itens" id="item4">D</div>
+            <div class="itens" id="item5">E</div>
+            <div class="itens" id="item6">F</div>
+            <div class="itens" id="item7">G</div>
+        </div>
+    </body>
+</html>
